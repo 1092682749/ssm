@@ -1,0 +1,446 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>留言板</title>
+</head>
+<style>
+body{
+	margin:0;
+	padding:0;
+	font:16px arial;
+	background-color:#F9F9F9;
+	letter-spacing:2px;
+}
+
+.top{
+	width:1000px;
+	height:150px;
+	margin:0 auto;
+}
+
+.t_left{
+	float:left;
+	margin-left:30px;
+}
+
+.t_left p{
+	height:20px;
+	line-height:20px;
+	color:#96b97d;
+	margin-top:30px;
+	margin-left:0;
+	margin-bottom:10px;
+	padding:0;
+	font-size:34px;
+	letter-spacing:3px;
+}
+
+.t_left img{
+	height:80px;
+	width:80px;
+	object-fit:cover;
+	border-radius:20%;
+	margin:10px 0 0 0;
+}
+
+.t_right{
+	float:right;
+	margin-top:130px;
+	
+}
+
+.t_right a{
+	text-decoration:none;
+	color:#000;
+	margin:5px;
+	letter-spacing:2px;
+}
+
+.t_right a:hover{
+	color:#00B900;
+}
+
+.nav{
+	width:100%;
+	height:50px;
+	margin:0 auto;
+	background-color:#96b97d;
+}
+
+.n_box{
+	width:1000px;
+	height:50px;
+	margin:0 auto;
+}
+
+ul li{
+	width:30px;
+	height:50px;
+	display:inline;
+	text-align:center;
+	line-height:50px;
+	margin:0 10px;
+	letter-spacing:2px;
+}
+
+li:nth-child(1){
+	margin-left:0px;
+}
+
+li a{
+	color:#FFF;
+	text-decoration:none;
+}
+
+li a:hover{
+	color:#BF7;
+}
+
+.one{
+	width:200px;
+	height:40px;
+	line-height:40px;
+	text-align:right;
+	margin-right:30px;
+}
+.two{
+	width:480px;
+	height:40px;
+	line-height:40px;
+	text-align:left;
+	margin-left:10px;
+}
+	
+.footer{
+	width:100%;
+	height:225px;
+	background-color:#FFF;
+}
+
+.f_one{
+	width:100%;
+	height:200px;
+}
+
+.f_two{
+	width:100%;
+	height:25px;
+	background-color:#F9F9F9;
+}
+
+.f_oo{
+	width:900px;
+	margin:20px auto;
+}
+
+.f_oo dl{
+	width:200px;
+	border-left:1px solid #BDBDBD;
+	color:#B0B0B0;
+	display:inline-block;
+	margin-top:30px;
+}
+
+dl dt{
+	margin-left:40px;
+	font-size:18px;
+	height:30px;
+	line-height:30px;
+	text-align:left;
+}
+
+dl dd{
+	margin-left:50px;
+	height:30px;
+	line-height:30px;
+	text-align:left;
+}
+
+dd a,dd a:visited{
+	text-decoration:none;
+	color:#AFAFAF;
+	letter-spacing:2px;
+}
+
+dd a:hover{
+	color:#00B900;
+	text-decoration:none;
+}
+
+.f_i{
+	margin:0 auto;
+	height:150px;
+	width:400px;
+	border-right:1px solid #BDBDBD;
+}
+
+dd img{
+	width:100px;
+	height:100px;
+	object-fit:cover;
+}
+
+.content{
+	width:1000px;
+	overflow:hidden;
+	margin:20px auto;
+}
+
+.c_left{
+	float:left;
+	width:180px;
+	background-color:#FFF;
+	margin-top:20px;
+	background-color:#FFF;
+}
+
+.one{
+	height:40px;
+	width:200px;
+	font-size:14px;
+	text-align:left;
+	padding-left:30px;	
+}
+
+.one:nth-child(1){
+	padding-left:20px;
+	font-size:16px;
+}
+
+.c_center{
+	background-color:#FFF;
+	width:600px;
+	float:left;
+	margin:20px;
+}
+
+.c_right{
+	width:180px;
+	margin-left:0;
+	margin-top:20px;
+	float:right;
+}
+
+.c_cd{
+	width:580px;
+	height:200px;
+	margin:10px;
+	border-bottom:1px solid #AAA;
+}
+
+hr{
+	color:#C9C9C9;
+	margin-left:10px;
+	width:350px;
+	text-align:right;
+}
+
+.c_cdl{
+	float:left;
+	width:200px;
+	height:200px;
+}
+
+.c_cdr{
+	float:right;
+	width:380px;
+	height:200px;
+}
+.c_cdl p{margin-left:40px;}
+.c_cdl img{
+	width:100px;
+	height:100px;
+	object-fit:cover;
+	margin-left:40px;
+}
+.c_cdro{
+	height:45px;
+	line-height:45px;
+	padding-left:0;
+	padding-top:30px;
+}
+
+.c_cdr .c_cdrt{
+	height:20px;
+	line-height:20px;
+	padding-left:50px;
+	margin-bottom:0px;
+}
+
+.c_cdr .c_cdrth{
+	height:40px;
+	line-height:40px;
+	padding-left:80px;
+	margin-top:10px;
+}
+
+.c_cro,.c_crt,.c_crth{
+	background-color:#FFF;
+	margin:20px;
+	width:160px;
+	margin:10px 0;
+	padding:10px;
+}
+
+.c_cro{
+	height:160px;
+}
+
+.c_cro img{
+	height:100px;
+	width:100px;
+	margin:30px 30px;
+}
+
+.c_crt p,.c_crth p{
+	height:20px;
+	width:100%;
+	line-height:20px;
+	font-size:14px;
+	text-align:left;
+	margin-left:40px;
+	
+}
+
+.c_crt .c_crtp,.c_crth .c_crthp{
+	font-size:16px;
+	margin-left:15px;
+}
+</style>
+<body>
+<div class="top">
+   <div class="t_left">
+    <p>李亚男的个人介绍</p>
+    <img src="img/1.jpg"/>
+   </div>
+   <div class="t_right">
+    <a href="index.jsp">首页</a>
+    <a href="liuyan.html">留言板</a>
+    <a href="picture.html">相册</a>
+    
+   </div>
+</div>
+    
+<div class="nav">
+  <div class="n_box">
+   <ul>
+       <li><a href="index.jsp">首页</a></li>
+       <li><a href="liuyan.html">留言板</a></li>
+       <li><a href="picture.html">相册</a></li>
+   </ul>
+  </div>  
+</div>
+
+<div class="content">
+  <div class="c_left">
+     <p class="one">最近访问人</p>
+     <p class="one">Miss Lee</p>
+     <p class="one">漂亮的潘舒宁</p>
+     <p class="one">英俊的杨洋</p>
+     <p class="one">英俊的我</p>
+  </div>
+  <div class="c_center">
+    <div class="c_cd">        
+      <div class="c_cdl">
+        <p class="c_cp">Miss Lee</p>
+        <img src="img/22.jpg"/>
+      </div>
+      
+      <div class="c_cdr">
+        <p class="c_cdro">2018!祝上钻石</p>
+        <hr />
+        <p class="c_cdrt">回复：</p>
+        <p class="c_cdrth">我也希望啊(#^.^#)</p>
+      </div>
+    </div>
+    <div class="c_cd">        
+      <div class="c_cdl">
+        <p class="c_cp">漂亮的潘舒宁</p>
+        <img src="img/42.jpg"/>
+      </div>
+      
+      <div class="c_cdr">
+        <p class="c_cdro">新年快乐(*^▽^*)</p>
+        <hr />
+        <p class="c_cdrt">回复：</p>
+        <p class="c_cdrth">么么哒</p>
+      </div>
+    </div>
+    <div class="c_cd">        
+      <div class="c_cdl">
+        <p class="c_cp">英俊的杨洋</p>
+        <img src="img/6.jpg"/>
+      </div>
+      
+      <div class="c_cdr">
+        <p class="c_cdro">一起来嗨呀</p>
+        <hr />
+        <p class="c_cdrt">回复：</p>
+        <p class="c_cdrth">啊！！！！真的吗</p>
+      </div>
+    </div>
+    <div class="c_cd">        
+      <div class="c_cdl">
+        <p class="c_cp">英俊的我</p>
+        <img src="img/24.jpg"/>
+      </div>
+      
+      <div class="c_cdr">
+        <p class="c_cdro">KTV走起</p>
+        <hr />
+        <p class="c_cdrt">回复：</p>
+        <p class="c_cdrth">ok啦，你请？</p>
+      </div>
+    </div>
+  </div> 
+  <div class="c_right">
+    <div class="c_cro">
+       <img src="img/3.jpg" />
+    </div>
+    <div class="c_crt">
+      <p class="c_crtp">签到</p>
+      <p>签到0次哦！</p>
+    </div>
+    <div class="c_crth">
+      <p class="c_crthp">我在看：</p>
+      <p>非诚勿扰</p>
+      <p>我是歌手</p>
+      <p>飞虎队</p>
+      <p>滴答滴答</p>
+    </div> 
+  </div> 
+</div>
+
+<div class="footer">
+  <div class="f_one">
+    <div class="f_oo">
+     <dl>
+        <dt>QQ信息</dt>
+        <dd><a href="https://user.qzone.qq.com/516496000?ADUIN=516496000&ADSESSION=1525571985&ADTAG=CLIENT.QQ.5563_MyTip.0&ADPUBNO=26785&source=namecardhoverstar">QQ空间</a></dd>
+        <dd><a href="https://user.qzone.qq.com/516496000/4">QQ相册</a></dd>
+        <dd><a href="https://user.qzone.qq.com/516496000/311">QQ说说</a></dd>
+     </dl>
+     <dl>
+        <dt>微博信息</dt>
+        <dd><a href="https://weibo.com/u/5745662714/home?topnav=1&wvr=6">微博主页</a></dd>
+        <dd><a href="https://weibo.com/5745662714/profile?rightmod=1&wvr=6&mod=personnumber">我的微博</a></dd>
+        <dd><a href="https://weibo.com/p/1005055745662714/myfollow#place">我的关注</a></dd>
+     </dl>
+     <dl>
+        <dt>码云信息</dt>
+        <dd><a href="https://gitee.com/MissLee/watched">码云关注</a></dd>
+        <dd><a href="https://gitee.com/MissLee/events">动态</a></dd>
+        <dd><a href="https://gitee.com/MissLee/projects">项目</a></dd>
+     </dl>
+     <dl class="f_i">
+        <dt>关注微信</dt>
+        <dd><img src="img/4.jpg"/></dd>
+     </div>
+    </div>
+  </div>
+  <div class="f_two"></div>
+
+</div>
+</body>
+</html>
