@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+}
+.navigationBox{
+    z-index: 1;
+    width: 100%;
+    height: 50px;
+    background: rgba(242, 242, 242, 0.3);
+    line-height: 50px;
+}
+.navigationBox:after{
+    z-index: -1;
+    content: "";
+    filter: blur(2px);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.topBackgroundBox{
+    width: 100%;
+    height: 250px;
+    /*background-color: black;*/
+    background-image: url("../img/navi.jpeg");
+    /*background-attachment: fixed;*/
+    background-position: center;
+    /*background-size: auto;*/
+}
+.navigationUl{
+    list-style: none;
+    display: list-item;
+    position: relative;
+    left: 70%;
+}
+.navigationUl li{
+    display: inline-block;
+    margin: 0px 10px;
+    cursor: pointer;
+    padding: 0px 10px;
+    transition: 0.5s;
+}
+.contribute{
+    background-color: #ee5a8b;
+    color: white;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.navigationUl li:hover{
+    background-color: rgba(242,242,242,0.7);
+}
+.listTopBox{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    text-align: center;
+}
+.cards{
+    border: 1px solid #00D6FF;
+    background-color: #169bd5;
+    /*height: 1000px;*/
+}
+.card{
+    position: relative;
+    background-color: #dddddd;
+    margin: 10px 0px;
+}
+.idBox{
+    /*float: left;*/
+    display: inline-block;
+    /*height: 100%;*/
+    background-color: #dddddd;
+    width: 10%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.title{
+    /*vertical-align: text-top;*/
+    margin: -3px;
+    width: 90%;
+    background-color: #dddddd;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+}
+.snapshoot{
+    position: relative;
+    left: 10%;
+    /*float: right;*/
+    width: 90px;
+    background-color: #dddddd;
+    width: 90%;
+}
+.snapshoot img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+a{
+    color: black;
+}
