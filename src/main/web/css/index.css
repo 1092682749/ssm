@@ -9,6 +9,7 @@
     line-height: 50px;
 }
 .navigationBox:after{
+    position: absolute;
     z-index: -1;
     content: "";
     filter: blur(2px);
@@ -31,6 +32,7 @@
     display: list-item;
     position: relative;
     left: 70%;
+    width: 23%;
 }
 .navigationUl li{
     display: inline-block;
@@ -78,7 +80,7 @@
 .title{
     /*vertical-align: text-top;*/
     margin: -3px;
-    width: 90%;
+    width: 89%;
     background-color: #dddddd;
     display: inline-block;
     height: 30px;
