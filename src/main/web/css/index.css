@@ -29,10 +29,13 @@
 }
 .navigationUl{
     list-style: none;
-    display: list-item;
+    display: inline;
     position: relative;
-    left: 70%;
-    width: 23%;
+    height: 50px;
+    float: right;
+    /*width: 23%;*/
+    /*overflow: hidden;*/
+    position: relative;
 }
 .navigationUl li{
     display: inline-block;
@@ -40,11 +43,14 @@
     cursor: pointer;
     padding: 0px 10px;
     transition: 0.5s;
+    float: left;
 }
 .contribute{
     background-color: #ee5a8b;
     color: white;
-    padding-bottom: 10px;
+    /*margin-bottom: 10px;*/
+    padding-bottom: 20px;
+    height: 55px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }

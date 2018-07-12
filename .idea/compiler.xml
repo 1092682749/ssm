@@ -7,9 +7,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="dyz" />
-        <module name="maven" />
-        <module name="ServerToBlog" />
-        <module name="ssm" />
       </profile>
     </annotationProcessing>
   </component>

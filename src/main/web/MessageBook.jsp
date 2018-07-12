@@ -17,21 +17,18 @@
 </div>
 <div class="listTopBox">帖子。。。。</div>
 <div class="cards">
-    <a>
-        <div class="card">
-            <div class="idBox">
-                <span>1</span>
+        <a href="http://www.baidu.com">
+            <div class="card" style="text-decoration: none">
+                <div class="idBox">
+                    <span>1</span>
+                </div>
+                    <div class="title">biaoti</div>
+                <div class="snapshoot">
+                    <p class="content" style="text-decoration: none">qweqweqeqweq</p>
+                    <img src="img/1.jpg">
+                </div>
             </div>
-            <a class="title">
-                <div>biaoti</div>
-            </a>
-            <div class="snapshoot">
-                <p class="content">qweqweqeqweq</p>
-                <img src="img/1.jpg">
-            </div>
-        </div>
-    </a>
-
+        </a>
 </div>
 </body>
 </html>
